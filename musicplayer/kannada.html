@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>International songs</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/41ee9bcd2a.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <audio src="" id="audio"></audio>
+    <div class="sidebar" id="sidebar">
+        <a href="kannada.html">Kannada Songs</a>
+        <a href="hindi.html">Hindi Songs</a>
+        <a href="international.html">International Songs</a>
+      </div>
+    <div class="content">
+        <span class="open-button" id="openButton" onclick="toggleSidebar()">☰</span>
+    </div>
+    <div class="player">
+      <div class="wrapper">
+        <div class="details">
+          <div class="now_playing">Playing x of y</div>
+          <div class="track_name">Track Name</div>
+          <div class="track_artist">Track Artist</div>
+          <div class="track_art"></div>
+        </div>
+
+        <div class="slider_container">
+          <div class="current_time">00:00</div>
+           <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+           <div class="total_duration">00:00</div>
+        </div>
+
+        <div class="buttons">
+          <div class="prev_track" onclick="prevTrack()">
+            <i class="fa fa-step-backward fa-2x"></i>
+          </div>
+          <div class="playpause_track" onclick="playpauseTrack()">
+            <i class="fa fa-play-circle fa-2x"></i>
+          </div>
+          <div class="next_track" onclick="nextTrack()">
+            <i class="fa fa-step-forward fa-2x"></i>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+    <script src="kannadascript.js"></script>
+  </body>
+</html>
